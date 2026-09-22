@@ -1,0 +1,7 @@
+import math 
+x = 3.3
+a_sqrt = (x *math.sin(2 *x)) / math.cos(2*x)
+print(a_sqrt)
+y = 3*(x**2) *math.sqrt(a_sqrt) +math.exp(-3*x) *(x**2+4)
+print(y)
+#python lab3

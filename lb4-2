@@ -1,0 +1,7 @@
+import math
+pr = 1.0
+for n in range(1,11):
+    num = math.cos(n**3)+n**2+4
+    den = math.sin(n**3)+n**2+6
+    pr *= num / den
+print(pr)

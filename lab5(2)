@@ -1,0 +1,18 @@
+a = int(input("Числа:"))
+l = []
+for p in range(a):
+    l.append(int(input()))
+if a <2:
+        print("больше")
+else:
+    maxm = l[0] * l[1]
+    pos1 = 1
+    pos2 = 2
+    for i in range(0, a-1):
+        x = l[i]*l[i+1]
+        if x > maxm:
+            maxm = x
+            pos1 = i+1
+            pos2 = i+2
+print(maxm)
+print(pos1, pos2)

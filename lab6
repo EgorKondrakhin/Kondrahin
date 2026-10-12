@@ -1,0 +1,7 @@
+s = "a3b2c1"
+r = ""
+for i in range(0, len(s),2):
+    bukv = s[i]
+    k = int(s[i+1])
+    r += bukv * k
+print(r)

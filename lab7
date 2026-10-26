@@ -1,0 +1,7 @@
+a = list(map(int, input().splite()))
+minp = min(a)
+maxp = max(a)
+mini = a.index(minp)
+maxi = a.index(maxp)
+a[mini], a[maxi] = a[maxi], a[mini]
+print(a) 

@@ -1,0 +1,15 @@
+m = [
+    [1, -2, 3],
+    [4, 5, -9],
+    [7, 8, 2]
+]
+y, x = 0, 0
+for r in range(3):
+    for c in range(3):
+        if abs(m[r][c]) > abs(m[y][x]):
+            y, x = r, c
+m[0], m[y] = m[y], m[0]
+for p in m:
+    p[0], p[x] = p[x], p[0]
+for p in m:
+    print(p)
